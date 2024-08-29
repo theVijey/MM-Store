@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.section-1{
+    height: 168rem;
+}
+form input{
+    display: block;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-between;
+}
+.str-head{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 5px;
+}
+/* .str-head img{
+    width: 20px;
+} */
+.search-bar{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.kart{
+    width: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.kart img{
+    width: 20px;
+}
+.search-bar form{
+    width: 80%;
+    background-color: rgb(242, 235, 235);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border: 1.5px solid gray;
+    border-radius: 15px;
+    padding: 2px;
+}
+.search-bar form input{
+    border: none;
+    background: transparent;
+}
+/* .search-bar form input::after{
+    clear: inherit;
+} */
+
+.search-bar form img{
+    width: 20px;
+}
+
+
+/* ======= Footer ============= */
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ===================== STORE PARTS ====================== */
+/* ===================== STORE PARTS ====================== */
+.store{
+    margin-top: 15px;
+    width: 100%;
+    /* height: 62rem; */
+    /* background-color: rgba(143, 80, 80, 0.164); */
+}
+/* .store h1{
+    font-size: 10em;
+    rotate: 45deg;
+} */
+.cate-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: red;
+    padding: 5px;
+}
+.cate-bar a{
+    color: white;
+
+    /* width: 10%; */
+    /* background-color: black; */
+}
+.cate-bar a:hover{
+    border-bottom: 4px solid white;
+    border-radius: 4px;
+}
+/* ============== Carousel ====================== */
+.carousel{
+    width: 100%;
+    margin: 10px 0px;
+    border: 2px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    display: none;
+    width: 100%;
+    height: 50vh;
+}
+.slides img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+/* ================================================ */
+.inv-cate{
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+
+}
+.inventory{
+    /* background-color: aquamarine; */
+    /* height: 50em; */
+}
+.dipartments{
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 200px; */
+    align-items: center;
+    border: 2px solid gray;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgb(242, 235, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dipartments img{
+    width: 250px;
+}
+.dipart-det{
+    line-height: 30px;
+    font-size: larger;
+}
+.dipart-det button{
+    padding: 5px 20px;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+}
+
+/* .products {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.product h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.product p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.product button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+} */
+
+
+
+
+@media (max-width:600px) and (min-width:300px) {
+    .sec-2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .cart img{
+        width: 40px
+    }
+    /* ======= Footer ============= */
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .terms{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    /* ========= STORE PARTS ====================== */
+    .store{
+        margin-top: 15px;
+        width: 100%;
+        /* height: 40rem; */
+
+    }
+    .store h1{
+        font-size: 5em;
+    }
+   
+    .carousel{
+        width: 100%;
+        margin: 10px 0px;
+        border: 2px solid;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    .slides {
+        display: none;
+        width: 100%;
+        height: 15vh;
+    }
+    .slides img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+    }
+
+    .inv-cate{
+        text-align: center;
+        width: 100%;
+        background-color: red;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+    }
+    .inv-cate h1{
+        font-size: 20px;
+    }
+
+    .inventory{
+        /* background-color: aquamarine; */
+        /* height: 50em; */
+    }
+    .dipartments{
+        height: 30rem;
+        background-color: rgb(233, 223, 223);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        border: 2px solid gray;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    .dipart-det{
+        text-align: center;
+        font-size: medium;
+        line-height: 25px;
+        padding-bottom: 15px;
+    }
+
+
+    /* .products {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    
+    .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    .product img {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .product h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .product p {
+        font-size: 16px;
+        color: #ff9900;
+        text-align: center;
+    }
+    
+    .product button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #333;
+        color: white;
+    } */
+}
